@@ -4,6 +4,7 @@ import Link from "next/link";
 import { usePathname } from "next/navigation";
 import brandLogo from "@/assets/logo.png";
 import Image from "next/image";
+import { ModeToggle } from "../ui/mode-toggler";
 
 const Navbar = () => {
   const pathname = usePathname();
@@ -16,13 +17,14 @@ const Navbar = () => {
   ];
 
   return (
-    <nav className="flex items-center justify-between p-4 border-b container mx-auto">
+    <nav className="flex items-center justify-between p-4 container mx-auto">
       <div className="flex items-center">
         <div className="flex items-center space-x-2">
           <Link href="/" className="flex items-center gap-1">
             <Image src={brandLogo} width={30} height={30} alt="brand logo" />
             <span className="text-xl font-bold">NexaBlog</span>
           </Link>
+          <ModeToggle></ModeToggle>
         </div>
       </div>
 

@@ -1,0 +1,26 @@
+[
+  {
+    "id": 1,
+    "projectThumbnail": "https://via.placeholder.com/400x300.png?text=TechNova",
+    "projectName": "TechNova",
+    "shortDescription": "A modern tech blog featuring the latest news, trends, and innovations in the world of technology."
+  },
+  {
+    "id": 2,
+    "projectThumbnail": "https://via.placeholder.com/400x300.png?text=FinTrack",
+    "projectName": "FinTrack",
+    "shortDescription": "A personal finance tracking app that helps users manage expenses, set budgets, and track investments."
+  },
+  {
+    "id": 3,
+    "projectThumbnail": "https://via.placeholder.com/400x300.png?text=ShopEase",
+    "projectName": "ShopEase",
+    "shortDescription": "An e-commerce platform offering a seamless shopping experience with AI-powered recommendations."
+  },
+  {
+    "id": 4,
+    "projectThumbnail": "https://via.placeholder.com/400x300.png?text=EduSphere",
+    "projectName": "EduSphere",
+    "shortDescription": "An online learning platform providing courses, interactive lessons, and certification programs."
+  }
+]

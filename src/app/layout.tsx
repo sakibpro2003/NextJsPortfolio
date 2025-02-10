@@ -3,6 +3,7 @@ import { Roboto } from "next/font/google";
 import "./globals.css";
 import Header from "@/components/shared/Header";
 import Footer from "@/components/shared/Footer";
+import { ThemeProvider } from "@/components/providers/theme-provider";
 
 const roboto = Roboto({
   weight: "400",
@@ -24,10 +25,12 @@ export default function RootLayout({
   return (
     <html lang="en">
       <body className={roboto.className}>
-        <Header />
-        {/* <Banner></Banner> */}
-        <div className="min-h-screen">{children}</div>
-        <Footer />
+        <ThemeProvider attribute="class" defaultTheme="light">
+          <Header />
+          {/* <Banner></Banner> */}
+          <div className="min-h-screen">{children}</div>
+          <Footer />
+        </ThemeProvider>
       </body>
     </html>
   );
